@@ -1,7 +1,12 @@
 # LaravelDocker
 Aplicacion web con Larvel dockerizado
 
-Para lanzar las instancias ejecutamos 
+Primero construimos la imagen de Apache 
+```bash
+docker-compose build
+
+```
+Para levantar las instancias ejecutamos 
 ```bash
 docker-compose up -d
 ```

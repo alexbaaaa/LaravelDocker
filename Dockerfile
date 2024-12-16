@@ -17,7 +17,8 @@ RUN apt-get update && apt-get install -y \
     curl \
     pdo_sqlite \
     zip \
-    && a2enmod rewrite
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # Establece el directorio de trabajo
 WORKDIR /var/www/html
